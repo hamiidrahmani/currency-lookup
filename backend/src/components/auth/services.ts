@@ -5,6 +5,11 @@ import { SuccessResponseBody, ErrorResponseBody } from '../../interfaces/HttpRes
 import { getEnv } from './../../utils';
 const ENV = getEnv();
 
+/**
+ * login endpoint will response with jwt token
+ *
+ * @return {response}
+ */
 const login = (req: Request, res: Response) => {
   try {
     const token: string = generateToken();
@@ -21,6 +26,11 @@ const login = (req: Request, res: Response) => {
   }
 };
 
+/**
+ * verify endpoint will response with error or just goes to next middleware
+ *
+ * @return {response}
+ */
 const secureRoute = (req: Request, res: Response, next: NextFunction) => {
   try {
     verifyToken(req.headers.authorization);
@@ -34,6 +44,7 @@ const secureRoute = (req: Request, res: Response, next: NextFunction) => {
   }
 };
 
+// Rate limit middleware
 const rateLimiter = RateLimit({
   windowMs: Number(ENV.MAX_REQUEST_TIME) * 60 * 1000, // in minutes
   max: Number(ENV.MAX_REQUEST_COUNT), // request count in windowMs
