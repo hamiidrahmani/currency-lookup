@@ -1,9 +1,8 @@
 {
-  "name": "currency-lookup",
+  "name": "currency-lookup-server",
   "version": "0.1.0",
-  "description": "Currency exchange converter",
+  "description": "Currency exchange converter back-end app",
   "author": "Siamak A.Motlagh <siamak.aghaeipour@gmail.com> (http://blacksrc.com)",
-  "license": "MIT",
   "private": true,
   "scripts": {
     "start": "nodemon src/app.ts",
