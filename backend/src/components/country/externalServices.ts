@@ -8,6 +8,11 @@ const {
   EXCHANGE_RATE_API_KEY,
 } = getEnv();
 
+/**
+ * fetch countries list
+ *
+ * @return {object}
+ */
 const fetchCountriesList = async (): Promise<[]> => {
   try {
     const response = await axios.get(`${COUNTRIES_URL}/${COUNTRIES_VERSION}`, {
@@ -26,6 +31,11 @@ const fetchCountriesList = async (): Promise<[]> => {
   }
 };
 
+/**
+ * fetch exchange rate list
+ *
+ * @return {object}
+ */
 const fetchExchangeRate = async (): Promise<any> => {
   try {
     const response = await axios.get(`${EXCHANGE_RATE_URL}/${EXCHANGE_RATE_ENDPOINT}`, {

@@ -11,6 +11,7 @@ const Countries = ({ country, fetchCountriesStartAsync }) => {
   const [selectedCountries, setSelectedCountries] = useState([]);
 
   useEffect(() => {
+    // User should at least type 2 characters to search
     if (keyword.length > 1) {
       const filtered = country.countries.filter(
         (countryItem) => countryItem.name.toLowerCase().indexOf(keyword.toLowerCase()) !== -1

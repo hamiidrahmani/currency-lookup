@@ -1,6 +1,11 @@
 import { fetchCountriesList, fetchExchangeRate } from './externalServices';
 import { Country } from '../../interfaces/Country';
 
+/**
+ * clean the countries list and add exchange rate to it
+ *
+ * @return {object}
+ */
 const fetchCountries = async (): Promise<Country[]> => {
   try {
     const countriesList = await fetchCountriesList();

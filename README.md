@@ -183,6 +183,9 @@ Things need to be done.
 - [x] Frontend functionality.
 - [x] Localization.
 - [x] Review inline code comments.
+- [ ] Re-think about error handling and response handling.
+- [ ] Use redis or mongo or ... to keep country list and exchange rates and update it internally to decrease external api calls.
+- [ ] Use redis or mongodb or ... to keep generated tokens.
 - [ ] Create component visual documentation (Storybook).
 - [ ] Unit tests (Jest / Mocha / Chai).
 - [ ] e2e tests (Cypress).

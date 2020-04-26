@@ -7,6 +7,7 @@ import { getEnv } from './utils';
 const ENV = getEnv();
 const app = express();
 
+// To fix cors issue for front-end development
 app.use(cors());
 
 app.use(bodyParser.urlencoded({ extended: true }));
