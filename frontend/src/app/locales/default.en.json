@@ -1,0 +1,12 @@
+{
+  "en-US": {
+    "translation": {
+      "search_placeholder": "Search country name...",
+      "country": "Country",
+      "population": "Population",
+      "currency": "Currency",
+      "title": "Currency Lookup",
+      "copyright": "© 2020 Currency Lookup. All rights reserved."
+    }
+  }
+}

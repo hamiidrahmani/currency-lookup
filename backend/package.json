@@ -1,12 +1,12 @@
 {
-  "name": "currency-lookup",
+  "name": "currency-lookup-server",
   "version": "0.1.0",
-  "description": "Currency exchange converter",
+  "description": "Currency exchange converter back-end app",
   "author": "Siamak A.Motlagh <siamak.aghaeipour@gmail.com> (http://blacksrc.com)",
-  "license": "MIT",
   "private": true,
   "scripts": {
     "start": "nodemon src/app.ts",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "husky": {
@@ -15,10 +15,12 @@
     }
   },
   "dependencies": {
+    "@types/cors": "^2.8.6",
     "@types/express-rate-limit": "^5.0.0",
     "@types/jsonwebtoken": "^8.3.9",
     "axios": "^0.19.2",
     "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-rate-limit": "^5.1.1",
