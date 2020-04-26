@@ -59,6 +59,8 @@ MAX_REQUEST_COUNT=30
 MAX_REQUEST_TIME=1
 ```
 
+> Consider adding `EXCHANGE_RATE_API_KEY` getting from `https://fixer.io/`
+
 4. Run project in development mode.
 
 ```sh
